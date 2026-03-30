@@ -1,21 +1,34 @@
-# Titanic-Data-Analysis-Project
-An end-to-end Data Analysis project on Titanic dataset using Python for data cleaning and Power BI for building an interactive dashboard with custom DAX measures.
-# 🚢 Titanic Survival Analysis: End-to-End Project
+# 🚢 Titanic Survival Analysis: End-to-End Data Project
 
 ### 📝 Project Overview
-Is project mein maine Titanic dataset ka detailed analysis kiya hai. Maine **Python** ka use karke data cleaning (preprocessing) ki aur **Power BI** ke zariye ek interactive dashboard build kiya.
+This project performs a comprehensive analysis of the Titanic dataset to identify factors influencing passenger survival. It demonstrates an end-to-end data workflow, from raw data cleaning to interactive dashboard creation.
 
-### 🛠️ Tech Stack & Skills
+### 🛠️ Tech Stack & Tools
 * **Data Cleaning:** Python (Pandas, NumPy)
 * **Visualization:** Power BI Desktop
-* **Analysis:** Custom DAX Measures (Survival Rate, Total Survivors)
-* **Concepts:** Data Pre-processing, Feature Engineering, Dashboard Design.
+* **Analysis:** DAX (Data Analysis Expressions)
+* **Data Source:** Titanic Dataset (CSV)
 
 ### 🚀 Key Steps Taken
-1. **Python Cleaning:** Missing values (Age/Cabin) ko handle kiya aur `FamilySize` jaisa naya feature banaya.
-2. **Power BI Dashboard:** Interactive visuals jaise **Gauge Chart**, **Donut Chart**, aur **Slicers** add kiye taaki demographics ke basis par insights mil sakein.
 
-### 📊 Key Insights
-* Overall Survival Rate lagbhag **36%** nikal kar aayi.
-* Female passengers ki survival rate males se kaafi zyada thi.
-* Passenger Class (1st, 2nd, 3rd) ka survival probability par bada asar dikha.
+#### 1. Data Cleaning & Pre-processing (Python)
+* Handled **Missing Values** for key columns like Age and Cabin.
+* Performed **Feature Engineering** to create a 'FamilySize' column for deeper insights.
+* Cleaned and formatted data types for seamless integration with Power BI.
+
+#### 2. Data Visualization (Power BI)
+* Developed an interactive dashboard with custom **DAX Measures**:
+    * `Total Survivors`
+    * `Survival Rate (%)`
+    * `Gender-wise Distribution`
+* Implemented **Gauge charts, Donut charts, and Slicers** for dynamic filtering by Passenger Class and Gender.
+
+### 📊 Key Insights Discovered
+* **Overall Survival Rate:** The analysis shows a survival rate of approximately **36%**.
+* **Gender Impact:** Female passengers had a significantly higher survival rate compared to males.
+* **Class Correlation:** First-class passengers had a higher probability of survival, showing a strong correlation between Pclass and survival outcomes.
+
+### 📂 Repository Structure
+* `Data/`: Contains the original and processed CSV files.
+* `Scripts/`: Python Jupyter Notebook used for data cleaning.
+* `Dashboard/`: The `.pbix` Power BI project file.
